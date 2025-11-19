@@ -1,0 +1,14 @@
+class Solution {
+
+    public static boolean isPanagram(String str) {
+        // Your code here
+        String s=str.toLowerCase();
+        HashSet<Character>hs=new HashSet<>();
+        for(char i: s.toCharArray()){
+            hs.add(i);
+        }
+        
+        if(hs.size()==26) return true;
+        return false;
+    }
+}
